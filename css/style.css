@@ -1,0 +1,85 @@
+body{
+    text-align: center;
+    margin: 0;
+    color: #7C9EB2;
+    width: 100%;
+}
+header{
+    top: 0;
+    background-color: #FFCAD4;
+    padding: .1rem;
+    position: fixed;
+    width: 100%;
+}
+#title{
+    font-weight: bold;
+    font-size: 27px;
+    font-family: 'Times New Roman', Times, serif;
+    width:100%;
+    color: #E01A4F;
+}
+#description{
+    padding-top: 0.4em;
+    font-style: italic;
+    font-size: 16px;
+    color: #000000;
+    margin-top: -1.5rem;
+}
+main{
+    margin-top: 4rem;
+}
+#survey-form{
+    text-align:center;
+    font-family: monospace;
+    font-size: 20px;
+    padding: 2rem;
+}
+main div{
+    margin:1rem;
+}
+#survey-form input{
+    padding: .5rem 8rem .5rem .1rem;
+    margin: .3rem;
+}
+#dropdown{
+    margin: 1rem;
+    padding: .5rem 7rem;
+    background-color:rgba(255, 255, 0, 0.301);
+}
+.radio{
+    font-style: italic;
+    color: #E01A4F;
+}
+.select{
+    margin-top: -1rem;
+    margin-bottom: 2rem;
+}
+#submit{
+    background-color: green;
+    border-radius: 20px;
+    padding: .2em 4rem;
+    font-size: 1em;
+    color:#fff;
+    cursor: pointer;
+}
+#submit:hover{
+    background-color: blue;
+}
+@media screen and (min-width:600px){
+    #survey-form{
+        background-color: #000000;
+        margin: 0 auto;
+        width: 70%;
+        color: #7C9EB2;
+    }
+}
+@media screen and (min-width:750px){
+    #survey-form{
+        background-color: #7C9EB2;
+        margin: 0 auto;
+        width: 80%;
+        color: #000000b4;
+    }
+}
+
+
