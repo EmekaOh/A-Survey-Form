@@ -1,85 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Lemonada&family=Playfair+Display:ital@1&display=swap');
+@import url('../components/reset.css');
+@import url('../components/button.css');
+
 body{
-    text-align: center;
-    margin: 0;
-    color: #7C9EB2;
-    width: 100%;
+    font-family: 'Lato', sans-serif;
 }
 header{
-    top: 0;
-    background-color: #FFCAD4;
-    padding: .1rem;
-    position: fixed;
+    background-color: rgb(170, 170, 230);
+    position: sticky;
     width: 100%;
+    top: 0;
+    padding: 1rem;
+    text-align: center;
 }
 #title{
     font-weight: bold;
-    font-size: 27px;
-    font-family: 'Times New Roman', Times, serif;
-    width:100%;
-    color: #E01A4F;
+    font-size: 13px;
+    font-family: 'Lemonada', cursive;
+    color: white;
 }
 #description{
     padding-top: 0.4em;
     font-style: italic;
-    font-size: 16px;
-    color: #000000;
-    margin-top: -1.5rem;
-}
-main{
-    margin-top: 4rem;
+    font-size: 10px;
+    color: #292929;
 }
 #survey-form{
     text-align:center;
-    font-family: monospace;
-    font-size: 20px;
-    padding: 2rem;
+    display: block;
+    width: 80%;
+    margin: auto;
+    margin-top: 1.5rem;
 }
-main div{
-    margin:1rem;
+.info-section label{
+    text-align:center;
+    display: block;
+    padding: 10px 0;
+    font-family: 'Lemonada', cursive;
+    font-size: 13px;
+    font-weight: bold;
+    color: gray;
 }
-#survey-form input{
-    padding: .5rem 8rem .5rem .1rem;
-    margin: .3rem;
+.info-section input{
+    font-family: 'Playfair Display', serif;
+    width: 70%;
+    border: none;
+    border-bottom: 2px solid rgb(170, 170, 230);
+    text-align: center;
+    padding: 5px;
+}
+.dropdown-label{
+    margin-top: 1rem;
+    font-size: 11px !important;
 }
 #dropdown{
-    margin: 1rem;
-    padding: .5rem 7rem;
-    background-color:rgba(255, 255, 0, 0.301);
-}
-.radio{
-    font-style: italic;
-    color: #E01A4F;
-}
-.select{
-    margin-top: -1rem;
-    margin-bottom: 2rem;
-}
-#submit{
-    background-color: green;
-    border-radius: 20px;
-    padding: .2em 4rem;
-    font-size: 1em;
-    color:#fff;
+    background-color:rgb(170, 170, 230);
+    padding: 5px;
+    width: 70%;
+    color: white;
+    border: none;
+    border-radius: 4px;
     cursor: pointer;
 }
-#submit:hover{
-    background-color: blue;
+#survey-form input:focus,#dropdown:focus {
+    border: 1px solid rgb(255, 42, 42);
+    background-color: white;
+    color: black;
 }
-@media screen and (min-width:600px){
-    #survey-form{
-        background-color: #000000;
-        margin: 0 auto;
-        width: 70%;
-        color: #7C9EB2;
+#radio{
+    margin: 1rem auto;  
+}
+#radio h4,#checkbox h4,.comment-section label {
+    font-size: 13px;
+    font-family: 'Lemonada', cursive;
+    font-weight: bold;
+    margin-bottom: .5rem;
+}
+.select{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 75%;
+    margin: auto;
+}
+#checkbox p{
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(170, 170, 230);
+    margin-bottom: .5rem;
+}
+.select label{
+    font-family: 'Playfair Display', serif;
+}
+.comment-section {
+    margin-top: 1rem;
+}
+.comment-section label {
+    display: block;
+    margin: 0;
+}
+.comments {
+    border: 1px solid rgb(170, 170, 230);
+    margin: 1rem 0;
+    width: 70%;
+    height: 100px;
+}
+@media screen and (min-width:700px){
+    #title{
+        font-size: 20px;
+    }
+    #description{
+        font-size: 14px;
     }
 }
-@media screen and (min-width:750px){
-    #survey-form{
-        background-color: #7C9EB2;
-        margin: 0 auto;
-        width: 80%;
-        color: #000000b4;
+@media screen and (min-width:1200px){
+    #survey-form {
+        width: 50%;
+        border: 2px solid rgb(170, 170, 230);
+        border-radius: 5px;
+        padding: 1rem 0;
+    }
+    .select {
+        width: 50%;
     }
 }
-
+main{
+    margin-bottom: 1rem;
+}
 
