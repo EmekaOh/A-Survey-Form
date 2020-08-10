@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Lemonada&family=Playfair+Display:ital@1&display=swap');
 @import url('../components/reset.css');
 @import url('../components/button.css');
+@import url('../components/scroll-bar.css');
 
 body{
     font-family: 'Lato', sans-serif;
@@ -29,8 +30,7 @@ header{
     text-align:center;
     display: block;
     width: 80%;
-    margin: auto;
-    margin-top: 1.5rem;
+    margin: 1.5rem auto;
 }
 .info-section label{
     text-align:center;
@@ -106,6 +106,20 @@ header{
     width: 70%;
     height: 100px;
 }
+footer h2 {
+    font-family: 'Playfair Display', serif;
+    margin: 2rem;
+    float: right;
+    text-transform: capitalize;
+    color: black;
+}
+footer a {
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+    color: red;
+}
 @media screen and (min-width:700px){
     #title{
         font-size: 20px;
@@ -124,8 +138,7 @@ header{
     .select {
         width: 50%;
     }
+    #submit {
+        width: 70%;
+    }
 }
-main{
-    margin-bottom: 1rem;
-}
-
